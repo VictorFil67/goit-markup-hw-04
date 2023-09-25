@@ -87,6 +87,7 @@ img {
 .header {
     border-bottom: 1px solid var(--cornflower);
         background: var(--white);
+        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .fl-container {
@@ -179,7 +180,10 @@ border-radius: 2px;
 }
 
 .rectangle {
-    padding: 24px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
     border: none;
     border-radius: 4px;
     background: var(--cloud);
@@ -293,13 +297,14 @@ font-size: 16px;
 }
 .hero-image {
     background-color: var(--navyblue);
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
                 background-repeat: no-repeat;
-                background-size: 1440рх;
+                background-size: cover;
+                background-position: center;
 }
 .last {
     padding-left: 141px;
@@ -420,17 +425,22 @@ margin-bottom: 72px;
 }
 .social {
     display: flex;
+    justify-content: center;
     gap: 24px;
     width: 232px;
     margin-left: auto;
     margin-right: auto;
 }
+.social-item {
+width: 40px;
+    height: 40px;
+}
 .social-round-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: var(--iris);
     color: var(--cloud);
@@ -439,7 +449,7 @@ margin-bottom: 72px;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-round-link:hover, .social-round-link:focus {
-    background-color: var(--green);
+    background-color: var(--ocean);
 }
 .social-icon {
     fill: currentColor;
