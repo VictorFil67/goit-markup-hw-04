@@ -12,6 +12,7 @@
     --white: #FFF;
     --green: #31D0AA;
     --light-slate: #8E8F99;
+    --dairy: #FCFCFC;
 }
 /**
   |============================
@@ -559,8 +560,9 @@ margin-bottom: 72px;
     width: 408px;
     min-height: 584px;
 
-    border-radius: 15px;
-    background-color: #fafafa;
+    border-radius: 4px;
+        background-color: var(--dairy);
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
     opacity: 1;
 
